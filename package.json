@@ -1,0 +1,16 @@
+{
+  "name": "contact-form",
+  "version": "1.0.0",
+  "description": "A contact form challenge from Frontend Mentor",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-dev": "sass --watch --source-map scss/main.scss:css/compiled_style.css",
+    "sass-prod": "sass --no-source-map --style=compressed scss/main.scss:css/compiled_style.css"
+  },
+  "author": "Levi Wright",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.77.6"
+  }
+}
