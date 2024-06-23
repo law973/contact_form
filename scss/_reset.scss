@@ -1,18 +1,24 @@
 
 body {
-    background-color: #e0f1e7;
-    color: #2f4543;
+    background-color: $color-green-bg;
+    color: $color-grey-text;
     display: grid;
-    font-family: "Karla", sans-serif;
+    font-family: $font-stack;
+    font-size: 16px;
+    font-weight: 400;
     height: 100vh;
     margin: 0;
     place-items: center;
     width: 100vw;
 }
 
-span {
-    color: #0c7d69;
-    font-weight: bold;
+fieldset {
+    border: none;
+    padding-left: 0;
+}
+
+legend {
+    padding-left: 0;
 }
 
 footer {

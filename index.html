@@ -12,44 +12,62 @@
     <!-- Form Card -->
     <div class="card">
 
-      <form action="">
+      <!-- Form -->
+      <form id="form">
+
+        <!-- Form Heading -->
         <div class="div1">
           <h1>Contact Us</h1>
         </div>
+
+        <!-- First Name -->
         <div class="div2"> 
-          <label for="first-name">First Name <span>*</span></label>
+          <label for="first-name">First Name <span class="asterisk">*</span></label>
           <input type="text" id="first-name" name="first-name" required>
-          This field is required
+          <span class="error">This field is required</span>
         </div>
+
+        <!-- Last Name -->
         <div class="div3"> 
-          <label for="last-name">Last Name <span>*</span></label>
+          <label for="last-name">Last Name <span class="asterisk">*</span></label>
           <input type="text" id="last-name" name="last-name" required>
-          This field is required
+          <span class="error">This field is required</span>
         </div>
+
+        <!-- Email Address -->
         <div class="div4"> 
-          <label for="email">Email Address <span>*</span></label>
+          <label for="email">Email Address <span class="asterisk">*</span></label>
           <input type="email" id="email" name="email" required>
-          Please enter a valid email address
-          This field is required
+          <span class="error">Please enter a valid email address</span>
         </div>
+
+        <!-- Query Type -->
         <div class="div5"> 
           <fieldset>
-            Query Type
-            General Enquiry
-            Support Request
-            Please select a query type
+            <legend>Query Type</legend>
+            <input type="radio" id="general" name="query" value="general">
+            <label for="general">General Enquiry</label>
+            <input type="radio" id="support" name="query" value="support">
+            <label for="support">Support Request</label>
+            <span class="error">Please select a query type</span>
           </fieldset>
         </div>
+
+        <!-- Message -->
         <div class="div6"> 
-          <label for="message">Message <span>*</span></label>
+          <label for="message">Message <span class="asterisk">*</span></label>
           <textarea id="message" name="message" required></textarea>
-          This field is required
+          <span class="error">This field is required</span>
         </div>
+
+        <!-- Consent -->
         <div class="div7"> 
           <input type="checkbox" id="consent" name="consent" required>
-          <label for="consent">I consent to being contacted by the team <span>*</span></label>
-          To submit this form, please consent to being contacted
+          <label for="consent">I consent to being contacted by the team <span class="asterisk">*</span></label>
+          <span class="error">To submit this form, please consent to being contacted</span>
         </div>
+
+        <!-- Submit Button -->
         <div class="div8"> 
           <input type="submit" value="Submit">
         </div>
@@ -57,18 +75,27 @@
     </div>
 
     <!-- Toast -->
-    <div class="toast-container">
-      <div id="toast" class="toast">
-        Message Sent!
+    <div class="toast-container" id="toast">
+      <div class="toast">
+        <span>
+          <img src="./assets/images/icon-success-check.svg" alt="Checkmark indicating successful form completion">
+          <h3>Message Sent!</h3>
+        </span>
         Thanks for completing the form. We'll be in touch soon!
       </div>
     </div>
+
   </main>
   <footer>
+
+    <!-- Attribution Text -->
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
       Coded by <a href="https://github.com/law973">Levi Wright</a>.
     </div>
   </footer>
+
+  <!-- Script -->
+	<script src="script.js"></script>
 </body>
 </html>
