@@ -1,0 +1,23 @@
+
+body {
+    background-color: #e0f1e7;
+    color: #2f4543;
+    display: grid;
+    font-family: "Karla", sans-serif;
+    height: 100vh;
+    margin: 0;
+    place-items: center;
+    width: 100vw;
+}
+
+span {
+    color: #0c7d69;
+    font-weight: bold;
+}
+
+footer {
+    bottom: 0;
+    font-size: 15px;
+    padding-bottom: 10px;
+    position: absolute;
+}

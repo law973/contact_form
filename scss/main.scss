@@ -1,0 +1,9 @@
+// Import Font???
+@font-face {
+    font-family: "Karla", sans-serif;
+    src: url('../assets/fonts/Karla-VariableFont_wght.ttf');
+}
+
+// Import SCSS partials
+@import 'reset';
+@import 'layout';
