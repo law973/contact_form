@@ -1,5 +1,3 @@
-# Front-end Style Guide
-
 ## Layout
 
 The designs were created to the following widths:
@@ -18,6 +16,4 @@ The designs were created to the following widths:
 - Grey 900 (darker): hsl(187, 24%, 22%)
 
 ### Font
-
-- Family: [Karla](https://fonts.google.com/specimen/Karla)
 - Weights: 400, 700

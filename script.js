@@ -26,6 +26,7 @@ form.addEventListener("submit", (e) => {
         consent.checked
     ) {
         toast.classList.add("active");
+        setTimeout(() => { toast.classList.remove('active'); }, 10000);
     } else {
         alert("Please try again...");
     }

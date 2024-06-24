@@ -45,10 +45,16 @@
         <div class="div5"> 
           <fieldset>
             <legend>Query Type</legend>
-            <input type="radio" id="general" name="query" value="general">
-            <label for="general">General Enquiry</label>
-            <input type="radio" id="support" name="query" value="support">
-            <label for="support">Support Request</label>
+            <div id="query-container">
+              <div class="radio-container">
+                <input type="radio" id="general" name="query" value="general">
+                <label for="general">General Enquiry</label>
+              </div>
+              <div class="radio-container">
+                <input type="radio" id="support" name="query" value="support">
+                <label for="support">Support Request</label>
+              </div>
+            </div>
             <span class="error">Please select a query type</span>
           </fieldset>
         </div>

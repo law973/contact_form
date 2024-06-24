@@ -1,5 +1,3 @@
-## The challenge
-
 Pay particular attention to making this form accessible.
 
 Your users should be able to: 
@@ -12,5 +10,3 @@ Your users should be able to:
 - Have inputs, error messages, and the success message announced on their screen reader
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
-
-[Join our community](https://www.frontendmentor.io/community)

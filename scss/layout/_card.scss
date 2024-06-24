@@ -10,7 +10,7 @@
     form {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(7, 1fr);
+        grid-template-rows: repeat(7, auto);
         grid-column-gap: 16px;
         grid-row-gap: 21px;
 
@@ -87,7 +87,13 @@
     textarea {
         border: 1px solid $color-grey-border;
         border-radius: 7px;
+        box-sizing: border-box;
         font-family: inherit;
+        font-size: 20px;
+        height: 105px;
+        line-height: 25px;
+        padding: 13px 23px;
+        resize: none;
         width: 100%;
     }
 
