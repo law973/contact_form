@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+@media screen and (max-height: 880px) {
+  .attribution {
+    visibility: hidden;
+  }
+}
 body {
   background-color: hsl(145, 38%, 91%);
   color: #2f4543;
@@ -14,7 +19,11 @@ body {
 
 fieldset {
   border: none;
+  margin-left: 0;
+  margin-right: 0;
   padding-left: 0;
+  padding-right: 0;
+  width: 100%;
 }
 
 legend {
@@ -75,7 +84,7 @@ footer {
   border-radius: 7px;
   font-family: inherit;
   height: 51px;
-  width: 100%;
+  width: calc(100% - 6px);
 }
 .card input[type=text]:hover, .card input[type=email]:hover {
   cursor: pointer;
@@ -131,6 +140,24 @@ footer {
 }
 .card .error {
   color: hsl(0, 66%, 54%);
+}
+.card #query-container {
+  display: flex;
+}
+.card .radio-container {
+  border: 1px solid #959b99;
+  border-radius: 7px;
+  flex-grow: 1;
+  padding: 11px 20px;
+}
+.card .radio-container label {
+  padding-left: 7px;
+}
+.card .radio-container:nth-child(1) {
+  margin-right: 8px;
+}
+.card .radio-container:nth-child(2) {
+  margin-left: 8px;
 }
 
 .toast-container {
