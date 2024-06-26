@@ -34,9 +34,10 @@
         &[type="text"], &[type="email"] {
             border: 1px solid $color-grey-border;
             border-radius: 7px;
+            box-sizing: border-box;
             font-family: inherit;
             height: 51px;
-            width: calc(100% - 6px);
+            width: 100%;
 
             &:hover {
                 cursor: pointer;
@@ -113,11 +114,17 @@
     .radio-container {
         border: 1px solid $color-grey-border;
         border-radius: 7px;
+        box-sizing: border-box;
         flex-grow: 1;
+        max-width: 360px;
         padding: 11px 20px;
+        position: relative;
 
         label {
             padding-left: 7px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
         }
 
         &:nth-child(1) {

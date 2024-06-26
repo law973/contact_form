@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
-@media screen and (max-height: 880px) {
+@media screen and (max-height: 900px) {
   .attribution {
     visibility: hidden;
   }
@@ -82,9 +82,10 @@ footer {
 .card input[type=text], .card input[type=email] {
   border: 1px solid #959b99;
   border-radius: 7px;
+  box-sizing: border-box;
   font-family: inherit;
   height: 51px;
-  width: calc(100% - 6px);
+  width: 100%;
 }
 .card input[type=text]:hover, .card input[type=email]:hover {
   cursor: pointer;
@@ -147,11 +148,17 @@ footer {
 .card .radio-container {
   border: 1px solid #959b99;
   border-radius: 7px;
+  box-sizing: border-box;
   flex-grow: 1;
+  max-width: 360px;
   padding: 11px 20px;
+  position: relative;
 }
 .card .radio-container label {
   padding-left: 7px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .card .radio-container:nth-child(1) {
   margin-right: 8px;
@@ -176,7 +183,7 @@ footer {
   width: 450px;
 }
 .toast-container.active {
-  animation: slideDown 1s forwards, slideUp 1s 9s;
+  animation: slideDown 1s forwards, slideUp 1s forwards 9s;
   visibility: visible;
 }
 .toast-container .toast {

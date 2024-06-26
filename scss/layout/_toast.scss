@@ -14,7 +14,7 @@
     width: 450px;
 
     &.active {
-        animation: slideDown 1s forwards, slideUp 1s 9s;
+        animation: slideDown 1s forwards, slideUp 1s forwards 9s;
         visibility: visible;
     }
 
