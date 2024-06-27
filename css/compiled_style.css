@@ -94,7 +94,10 @@ footer {
   border: 1px solid #3d685e;
 }
 .card input[type=radio] {
+  accent-color: hsl(169, 82%, 27%);
+  cursor: pointer;
   height: 20px;
+  margin: 0;
   width: 20px;
 }
 .card input[type=checkbox] {
@@ -146,19 +149,19 @@ footer {
   display: flex;
 }
 .card .radio-container {
+  align-items: center;
   border: 1px solid #959b99;
   border-radius: 7px;
   box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
   flex-grow: 1;
+  font-size: 18px;
+  gap: 7px;
+  height: 51px;
   max-width: 360px;
   padding: 11px 20px;
   position: relative;
-}
-.card .radio-container label {
-  padding-left: 7px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
 }
 .card .radio-container:nth-child(1) {
   margin-right: 8px;

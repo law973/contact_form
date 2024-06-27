@@ -44,16 +44,16 @@
         <!-- Query Type -->
         <div class="div5"> 
           <fieldset>
-            <legend>Query Type</legend>
+            <legend>Query Type <span class="asterisk">*</span></legend>
             <div id="query-container">
-              <div class="radio-container">
+              <label for="general" class="radio-container" id="general-container">
                 <input type="radio" id="general" name="query" value="general">
-                <label for="general">General Enquiry</label>
-              </div>
-              <div class="radio-container">
+                General Enquiry
+              </label>
+              <label for="support" class="radio-container">
                 <input type="radio" id="support" name="query" value="support">
-                <label for="support">Support Request</label>
-              </div>
+                Support Request
+              </label>
             </div>
             <span class="error">Please select a query type</span>
           </fieldset>

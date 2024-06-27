@@ -1,4 +1,5 @@
-let form = document.getElementById("form");
+// FORM SUBMISSION ------------
+const form = document.getElementById("form");
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -30,5 +31,4 @@ form.addEventListener("submit", (e) => {
     } else {
         alert("Please try again...");
     }
-
 });
