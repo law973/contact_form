@@ -1,3 +1,27 @@
+// RADIO LABEL STYLING ------------
+const buttonGeneral = document.getElementById("general");
+const buttonSupport = document.getElementById("support");
+const labelGeneral = document.getElementById("general-label");
+const labelSupport = document.getElementById("support-label");
+
+// Function for adding and removing label styling as appropriate
+function changeLabelStyle(buttonID) {
+
+    if (buttonID == buttonGeneral.id) {
+        buttonGeneral.checked = true;
+        labelSupport.classList.remove("selected");
+        labelGeneral.classList.add("selected");
+    } else {
+        buttonSupport.checked = true;
+        labelGeneral.classList.remove("selected");
+        labelSupport.classList.add("selected");
+    };
+};
+
+// Event listeners for radio button labels
+buttonGeneral.addEventListener("click", () => changeLabelStyle(buttonGeneral.id));
+buttonSupport.addEventListener("click", () => changeLabelStyle(buttonSupport.id));
+
 // FORM SUBMISSION ------------
 const form = document.getElementById("form");
 

@@ -46,11 +46,11 @@
           <fieldset>
             <legend>Query Type <span class="asterisk">*</span></legend>
             <div id="query-container">
-              <label for="general" class="radio-container" id="general-container">
+              <label for="general" class="radio-container" id="general-label">
                 <input type="radio" id="general" name="query" value="general">
                 General Enquiry
               </label>
-              <label for="support" class="radio-container">
+              <label for="support" class="radio-container" id="support-label">
                 <input type="radio" id="support" name="query" value="support">
                 Support Request
               </label>
@@ -68,8 +68,11 @@
 
         <!-- Consent -->
         <div class="div7"> 
-          <input type="checkbox" id="consent" name="consent" required>
-          <label for="consent">I consent to being contacted by the team <span class="asterisk">*</span></label>
+          <div class="checkbox-container">
+            <input type="checkbox" id="consent" name="consent" required>
+            <label for="consent" id="consent-label">I consent to being contacted by the team <span class="asterisk">*</span></label>
+          </div>
+          
           <span class="error">To submit this form, please consent to being contacted</span>
         </div>
 
