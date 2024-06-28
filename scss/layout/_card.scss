@@ -37,7 +37,11 @@
             flex-direction: column;
             grid-area: 5 / 1 / 6 / 3; 
         }
-        .div7 { grid-area: 6 / 1 / 7 / 3; }
+        .div7 { 
+            display: flex;
+            flex-direction: column;
+            grid-area: 6 / 1 / 7 / 3; 
+        }
         .div8 { grid-area: 7 / 1 / 8 / 3; }
     }
 
